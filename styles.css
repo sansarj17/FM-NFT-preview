@@ -1,0 +1,180 @@
+/* # Front-end Style Guide
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+- Font size (paragraph): 18px
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
+
+:root {
+  --slight-white: rgba(139, 171, 217, 0.8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit";
+  font-size: 18px;
+}
+
+.container {
+  width: 320px;
+  background-color: hsl(216, 50%, 16%);
+  /* background-color: white; */
+  text-align: center;
+  padding: 15px;
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin: auto;
+  /* margin-top: 60px; */
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 50%;
+  transform: scale(0.8);
+}
+
+.wrapper {
+  padding: 5px;
+  width: 100%;
+}
+
+.wrapper .modal {
+  display: none;
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+.wrapper .modal img {
+  width: 10%;
+  position: relative;
+  top: 45%;
+}
+
+.wrapper img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.text {
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  text-align: left;
+  margin: 20px 0 10px 0;
+  padding: 5px;
+}
+
+.text h3 {
+  font-weight: 600;
+  color: white;
+  font-size: 25px;
+}
+.text p {
+  font-size: 18px;
+  margin: 15px 0 5px 0;
+  line-height: 28px;
+  /* color: hsl(215, 51%, 70%); */
+  color: var(--slight-white);
+}
+
+.details {
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 3px;
+}
+.details > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.details > div > img {
+  width: 20px;
+  height: 20px;
+}
+
+.details > div > h6 {
+  margin: 0 5px;
+  width: 100%;
+  text-overflow: clip;
+}
+.ethPrice h6 {
+  font-weight: 600;
+  font-size: 18px;
+  color: hsl(178, 100%, 50%);
+}
+
+.time h6 {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--slight-white);
+}
+
+hr {
+  width: 95%;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 15px;
+}
+
+.avatar {
+  text-align: left;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  box-sizing: content-box;
+}
+
+.avatar img {
+  width: 40px;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+
+.avatar p {
+  font-size: 16px;
+  /* color: hsl(215, 51%, 70%); */
+  color: var(--slight-white);
+  margin: 0 0 0 18px;
+}
+.avatar p a {
+  color: white;
+}
+
+@media (min-width: 720px) {
+  .container {
+    /* transform: scale(0.8); */
+  }
+}
+
+.attribution {
+  position: relative;
+  bottom: 40px;
+}
