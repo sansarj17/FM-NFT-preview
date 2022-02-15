@@ -167,13 +167,6 @@ hr {
 .avatar p a {
   color: white;
 }
-
-@media (min-width: 720px) {
-  .container {
-    /* transform: scale(0.8); */
-  }
-}
-
 .attribution {
   position: relative;
   bottom: 40px;
